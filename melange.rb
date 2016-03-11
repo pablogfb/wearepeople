@@ -5,6 +5,6 @@ class Melange < Product
   end
   
   def total
-    
+    @quantity >= 3 ? @quantity*33.33 : @quantity*@price
   end
 end

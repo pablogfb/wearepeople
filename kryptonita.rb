@@ -5,6 +5,6 @@ class Kryptonita < Product
   end
   
   def total
-    
+    @quantity.even? ? @price*@quantity/2 : @price*((@quantity/2)+1)
   end
 end

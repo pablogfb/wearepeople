@@ -1,5 +1,5 @@
 class Product
- attr_accessor :quantity, :code, :name
+ attr_accessor :quantity
  
  def initialize n
    @quantity = n
