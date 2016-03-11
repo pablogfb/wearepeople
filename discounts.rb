@@ -5,7 +5,7 @@ class Discounts
         product.quantity.even? ? total = product.price*product.quantity/2 : 
         total = product.price*((product.quantity/2)+1)
       when "overQuantity"
-        product.quantity >= 3 ? total = product.quantity*newPrice : #TODO newPrice
+        product.quantity >= 3 ? total = product.quantity*product.newPrice : 
         total = product.quantity*product.price
       else
         total = product.quantity*product.price

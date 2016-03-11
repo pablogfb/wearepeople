@@ -1,5 +1,5 @@
 class Product
- attr_accessor :quantity, :price, :discount
+ attr_reader :quantity, :price, :discount, :newPrice
  
  def initialize n, discount
    @quantity = n
