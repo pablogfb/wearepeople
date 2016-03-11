@@ -2,6 +2,7 @@ require_relative 'product'
 require_relative 'unobtainium'
 require_relative 'melange'
 require_relative 'kryptonita'
+require_relative 'discounts'
 
 class Cart
   attr_accessor :cart

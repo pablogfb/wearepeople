@@ -3,7 +3,7 @@ require_relative 'cart'
 
 describe Cart do
   before do
-    pricing_rules = '?'
+    pricing_rules = {"KR"=> "twoForOne", "ME" => "overQuantity", "UN" => "none"}
     @cart = Cart.new(pricing_rules)
   end
 
