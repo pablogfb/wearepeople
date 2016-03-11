@@ -5,7 +5,6 @@ require_relative 'kryptonita'
 require_relative 'discounts'
 
 class Cart
-  attr_accessor :cart
   def initialize(pricing_rules = nil)
     @cart={}
     @pricing_rules = pricing_rules
