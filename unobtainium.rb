@@ -1,5 +1,5 @@
 class Unobtainium < Product
-  def initialize n
+  def initialize n, discount
     super
     @price = 999
   end
