@@ -1,3 +1,8 @@
+require_relative 'product'
+require_relative 'unobtainium'
+require_relative 'melange'
+require_relative 'kryptonita'
+
 class Cart
   def initialize(pricing_rules = nil)
   end
@@ -6,6 +11,8 @@ class Cart
   end
 
   def total
-    0
   end
 end
+
+
+
