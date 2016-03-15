@@ -2,10 +2,12 @@ class Discounts
   def self.calc product
     case product.discount
       when "twoForOne"
-        product.quantity.even? ? total = product.price*product.quantity/2 : 
-        total = product.price*((product.quantity/2)+1)
+        product.quantity.even? ? 
+        total = product.price*product.quantity/2 : 
+        total = product.price*(product.quantity/2+1)
       when "overQuantity"
-        product.quantity >= 3 ? total = product.quantity*product.newPrice : 
+        product.quantity >= 3 ? total = 
+        product.quantity*product.newPrice : 
         total = product.quantity*product.price
       else
         total = product.quantity*product.price
